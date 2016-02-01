@@ -1,1 +1,216 @@
 hello world!
+<!DOCTYPE html>
+<html>
+<head>
+	<title>about.me | Israel D. Matos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Ubuntu:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<style> 
+
+		body {
+			padding-top: 65px;
+		}
+
+		.nav-icon {
+			margin-right: 15px;
+		}
+
+		#pic {
+			background-image: url('http://i.imgur.com/uncyxEf.jpg');
+			background-size: cover;
+			height: 800px;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.headshot {
+			max-height: 35%;
+			max-width: 35%;
+			position: absolute;
+			border: 5px solid white;
+			border-radius: 100%;
+			top: 27%;
+			left: 34%;
+		}
+
+		#name {
+			font-size: 25px;
+			font-weight: 700;
+		}
+
+		#position {
+			margin-top: 1%;
+			font-size: 17px;
+			font-weight: 400;
+			color: #222225;
+		}
+
+		.btn-warning {
+			font-weight: 400;
+			background-color: #FF6400;
+		}
+
+		.bio-body {
+			margin-top: 7%
+			
+		}
+
+		.right {
+			font-family: Ubuntu;
+			margin-top: 30%;
+		}
+		@media (max-width: 1500px) {
+			.right {
+				margin-top: 5%;
+			}
+		}
+
+		.contact h4 {
+			font-size: 15px;
+			display: inline-table;
+
+		}
+		.contact {
+			margin-bottom: 20px;
+			display: inline-table;
+			width: 100%
+		}
+
+		.phone {
+			font-size: 20px;
+			display: inline-table;
+			margin-right: 3%;
+		}
+
+		.phone-number {
+			margin-left: 7px;
+		}
+
+		.email {
+			display: inline-table;
+		}
+
+		.email-add {
+			margin-left: 7px;
+		}
+
+		.inline-apps {
+			text-align: center;
+		}
+
+		.icon {
+			margin: auto auto;
+			display: inline-block;
+			font-size: 40px;
+			color: #101010;
+			width: 80px;
+			height: 80px;
+		}
+		
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+
+			<div class="navbar-header">
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+
+				<a href="#" class="navbar-brand"><i class="fa fa-code nav-icon"></i>    about.me </a>
+
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+
+				
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Mailing List</a></li>
+				</ul>
+
+			</div> <!--close Collapsed on mobile & tablet format !-->
+
+		</div>
+	</nav>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-7 col-sm-12 left">
+
+                <div id="pic">
+                   	<img class="img-responsive headshot" src="http://i.imgur.com/1sXJQIv.jpg"/>
+                </div>
+
+			</div>
+
+			<div class="col-md-5 col-sm-12 right">
+
+				<div class="bio-head">
+					<div class="bio-heading">
+						<h1 id="name">ISRAEL D. MATOS</h1>
+						<h2 id="position">Front End Web Developer in SF</h2>
+					</div>
+					<div class="contact">
+						<div class="phone">
+							<i class="fa fa-mobile"></i>
+							<h4 class="phone-number">(323) 333-1225</h4>
+						</div>
+						<div class="email">
+							<i class="fa fa-envelope-o"></i>
+							<a href="mailto:israeldmatos@gmail.com">
+								<h4 class="email-add">israeldmatos@gmail.com</h4>
+							</a>
+						</div>
+					</div>
+					<div class="portfolio-btn">
+						<a class="portfolio" href="#" >
+							<button class="btn btn-warning btn-lg"><i class="fa fa-briefcase"></i> View My Portfolio</button>
+						</a>
+					</div>
+				</div>
+
+				<div class="bio-body">
+					<p>Originally hailing from the Big Apple, Israel came out west to live his Silicon Valley dream.  After spending an afternoon teaching kids how to logically break down and solve puzzles at a high school computer science fair, he was hooked.  Realizing that programming computers was the intellectual challenge he had been seeking all along all those years after college, he hatched a plan to enlist in the ranks of the new generation of software engineers and escape years of mentally stifling labor.</p>
+
+					<p>Working under one of the biggest real estate brokers in NYC and slowly climbing up the career curve, he realized the time he spent tinkering with the high tech tools his company gave him was his favorite time at work. After volunteering at the fair mentioned above, he spent some time online learning on his own and when it became clear this was more fun than work, he decided it was time.  He worked through the summer to save a nest egg, put all his earthly possessions in storage, and headed out to the Bay to become a programmer.</p>
+
+					<p>After learning Javascript fundamentals and advanced functional programming at Telegraph Academy's Prep course located in Berkeley, Israel is currently having a great time learning the simple style and immense power of Ruby while he considers a full stack development immersion course...</p>
+				</div>
+
+				<div class="inline-apps">
+					<a class="icon github" href="https://github.com/everysum1">
+						<i class="fa fa-github"></i>
+					</a>
+					<a class="icon linkedin" href="https://www.linkedin.com/in/israelmatos">
+						<i class="fa fa-linkedin-square"></i>
+					</a>
+					<a class="icon twitter" href="https://www.twitter.com/matossays">
+						<i class="fa fa-twitter"></i>
+					</a>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- -section telling us 
+-more about you 
+-your picture
+-section with your contact info -->
