@@ -5,11 +5,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Ubuntu:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="favicon-code.ico">
 
 	<style> 
 
 		body {
 			padding-top: 65px;
+			height: 100%;
+			width: 100%;
 		}
 
 		.nav-icon {
@@ -17,21 +20,34 @@
 		}
 
 		#pic {
-			background-image: url('http://i.imgur.com/uncyxEf.jpg');
+			background-image: url('http://i.imgur.com/FVt2bXQ.jpg');
 			background-size: cover;
-			height: 800px;
+			height: 480px;
 			background-repeat: no-repeat;
 			background-position: center center;
+			width: 100%;
+		}
+		
+		@media (min-width: 992px) {
+			#pic {
+				height: 1040px;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			#pic {
+				height: 970px;
+			}
 		}
 
 		.headshot {
 			max-height: 35%;
 			max-width: 35%;
 			position: absolute;
-			border: 5px solid white;
+			border: 5px solid #FFD1AE;
 			border-radius: 100%;
-			top: 27%;
-			left: 34%;
+			top: 20%;
+			left: 35%;
 		}
 
 		#name {
@@ -46,57 +62,103 @@
 			color: #222225;
 		}
 
-		.btn-warning {
-			font-weight: 400;
-			background-color: #FF6400;
+		.bio-body {
+			margin-top: 6%
 		}
 
-		.bio-body {
-			margin-top: 7%
-			
+		@media (min-width: 992px) {
+			.bio-body {
+				margin-top: 10%;
+			}
 		}
 
 		.right {
 			font-family: Ubuntu;
-			margin-top: 30%;
+			margin-top: 1%;
 		}
-		@media (max-width: 1500px) {
+
+		@media (min-width: 992px) {
 			.right {
-				margin-top: 5%;
+				margin-top: 7%;
 			}
 		}
-
-		.contact h4 {
-			font-size: 15px;
-			display: inline-table;
-
+		.left {
+			padding-bottom: 5%;
+			border-bottom: 2px solid #FFDA1E;
+			border-right: 0px solid #FFDA1E;
+			
 		}
+
+		@media (min-width: 992px) {
+			.left {
+				padding: 1% 2% 2% 0%;
+				margin-bottom: 10px;
+				border-right: 2px solid #FFDA1E;
+				border-bottom: 0px solid #FFDA1E;
+			}
+		}
+		`
 		.contact {
 			margin-bottom: 20px;
 			display: inline-table;
 			width: 100%
 		}
-
-		.phone {
+		
+		.contact h4 {
+			font-size: 15px;
+			display: inline-table;
+		}
+		
+		.contact-phone {
 			font-size: 20px;
 			display: inline-table;
 			margin-right: 3%;
 		}
 
 		.phone-number {
-			margin-left: 7px;
+			padding-left: 3%;
+		}
+		
+		.number:link {
+			color: #101010;
 		}
 
-		.email {
+		.number:visited {
+			color: purple;
+		}
+
+		.number:hover {
+			color: #F20000;
+		}
+		
+		.contact-email {
 			display: inline-table;
 		}
 
-		.email-add {
-			margin-left: 7px;
+		.emailaddress {
+			padding-left: 3%;
+		}
+		
+		.emailaddress:link {
+			color: #101010;
+		}
+		.emailaddress:visited {
+			color: purple;
 		}
 
+		.emailaddress:hover {
+			color: #F20000;
+		}
+		
+		
+		.btn-warning {
+			font-weight: 400;
+			background-color: #FF6400;
+		}
+		
 		.inline-apps {
 			text-align: center;
+			padding-top: 7%;
 		}
 
 		.icon {
@@ -104,8 +166,8 @@
 			display: inline-block;
 			font-size: 40px;
 			color: #101010;
-			width: 80px;
-			height: 80px;
+			width: 100%
+			padding: 0% 2%;
 		}
 		
 	</style>
@@ -128,8 +190,6 @@
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-nav-demo">
-
-				
 
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">FAQ</a></li>
@@ -158,18 +218,21 @@
 				<div class="bio-head">
 					<div class="bio-heading">
 						<h1 id="name">ISRAEL D. MATOS</h1>
-						<h2 id="position">Front End Web Developer in SF</h2>
+						<h2 id="position">Full Stack Web Developer in SF</h2>
 					</div>
 					<div class="contact">
-						<div class="phone">
+						<div class="contact-phone">
 							<i class="fa fa-mobile"></i>
-							<h4 class="phone-number">(323) 333-1225</h4>
+							<h4 class="phone-number">
+								<a class="number" href="tel:323-333-1225">(323) 333-1225</a>
+							</h4>
 						</div>
-						<div class="email">
+						<div class="contact-email">
 							<i class="fa fa-envelope-o"></i>
-							<a href="mailto:israeldmatos@gmail.com">
-								<h4 class="email-add">israeldmatos@gmail.com</h4>
-							</a>
+							<h4 class="emailaddress">
+								<a class="emailaddress" href="mailto:israeldmatos@gmail.com">
+								israeldmatos@gmail.com</a>
+							</h4>
 						</div>
 					</div>
 					<div class="portfolio-btn">
@@ -180,9 +243,9 @@
 				</div>
 
 				<div class="bio-body">
-					<p>Originally hailing from the Big Apple, Israel came out west to live his Silicon Valley dream.  After spending an afternoon teaching kids how to logically break down and solve puzzles at a high school computer science fair, he was hooked.   Realizing that programming computers was the intellectual challenge he had been seeking all along all those years after college, he hatched a plan to enlist in the ranks of the new generation of software engineers and escape years of mentally stifling labor.</p>
+					<p>Originally hailing from the Big Apple, Israel came out west to live his Silicon Valley dream.  After spending an afternoon teaching kids how to logically break down and solve puzzles at a high school computer science fair, he was hooked.  Realizing that programming computers was the intellectual challenge he had been seeking all along all those years after college, he hatched a plan to enlist in the ranks of the new generation of software engineers and escape years of mentally stifling labor.</p>
 
-					<p>Working under one of the biggest real estate brokers in NYC and slowly climbing up the career curve, he realized the time he spent tinkering with the high tech tools his company gave him was his favorite time at work.  After volunteering at the fair mentioned above, he spent some time online learning on his own and when it became clear this was more fun than work, he decided it was time.  He worked through the summer to save a nest egg, put all his earthly possessions in storage, and headed out to the Bay to become a programmer.</p>
+					<p>Working under one of the biggest real estate brokers in NYC and slowly climbing up the career curve, he realized the time he spent tinkering with the high tech tools his company gave him was his favorite time at work. After volunteering at the fair mentioned above, he spent some time online learning on his own and when it became clear this was more fun than work, he decided it was time.  He worked through the summer to save a nest egg, put all his earthly possessions in storage, and headed out to the Bay to become a programmer.</p>
 
 					<p>After learning Javascript fundamentals and advanced functional programming at Telegraph Academy's Prep course located in Berkeley, Israel is currently having a great time learning the simple style and immense power of Ruby while he considers a full stack development immersion course...</p>
 				</div>
