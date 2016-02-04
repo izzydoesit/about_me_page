@@ -97,35 +97,59 @@
 				border-bottom: 0px solid #FFDA1E;
 			}
 		}
-
-		.contact h4 {
-			font-size: 15px;
-			display: inline-table;
-
-		}
+		`
 		.contact {
 			margin-bottom: 20px;
 			display: inline-table;
 			width: 100%
 		}
-
-		.phone {
+		
+		.contact h4 {
+			font-size: 15px;
+			display: inline-table;
+		}
+		
+		.contact-phone {
 			font-size: 20px;
 			display: inline-table;
 			margin-right: 3%;
 		}
 
 		.phone-number {
-			margin-left: 7px;
+			padding-left: 3%;
+		}
+		
+		.number:link {
+			color: #101010;
 		}
 
-		.email {
+		.number:visited {
+			color: purple;
+		}
+
+		.number:hover {
+			color: #F20000;
+		}
+		
+		.contact-email {
 			display: inline-table;
 		}
 
-		.email-add {
-			margin-left: 7px;
+		.emailaddress {
+			padding-left: 3%;
 		}
+		
+		.emailaddress:link {
+			color: #101010;
+		}
+		.emailaddress:visited {
+			color: purple;
+		}
+
+		.emailaddress:hover {
+			color: #F20000;
+		}
+		
 		
 		.btn-warning {
 			font-weight: 400;
@@ -134,6 +158,7 @@
 		
 		.inline-apps {
 			text-align: center;
+			padding-top: 7%;
 		}
 
 		.icon {
@@ -141,8 +166,8 @@
 			display: inline-block;
 			font-size: 40px;
 			color: #101010;
-			width: 80px;
-			height: 80px;
+			width: 100%
+			padding: 0% 2%;
 		}
 		
 	</style>
@@ -196,15 +221,18 @@
 						<h2 id="position">Full Stack Web Developer in SF</h2>
 					</div>
 					<div class="contact">
-						<div class="phone">
+						<div class="contact-phone">
 							<i class="fa fa-mobile"></i>
-							<h4 class="phone-number">(323) 333-1225</h4>
+							<h4 class="phone-number">
+								<a class="number" href="tel:323-333-1225">(323) 333-1225</a>
+							</h4>
 						</div>
-						<div class="email">
+						<div class="contact-email">
 							<i class="fa fa-envelope-o"></i>
-							<a href="mailto:israeldmatos@gmail.com">
-								<h4 class="email-add">israeldmatos@gmail.com</h4>
-							</a>
+							<h4 class="emailaddress">
+								<a class="emailaddress" href="mailto:israeldmatos@gmail.com">
+								israeldmatos@gmail.com</a>
+							</h4>
 						</div>
 					</div>
 					<div class="portfolio-btn">
