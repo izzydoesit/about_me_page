@@ -26,6 +26,7 @@
 			background-repeat: no-repeat;
 			background-position: center center;
 			width: 100%;
+			opacity: 0.5;
 		}
 		
 		@media (min-width: 992px) {
@@ -90,6 +91,7 @@
 				margin-bottom: 10px;
 				border-right: 2px solid #FFDA1E;
 				border-bottom: 0px solid #FFDA1E;
+				background: #333333;
 			}
 		}
 		`
@@ -98,15 +100,24 @@
 			display: inline-table;
 			width: 100%
 		}
+
+		.contact table {
+			width: 100%;
+		}
 		
 		.contact-phone {
 			display: inline-table;
 		}
 		.fa-mobile {
 			font-size: 1.5em;
+			text-align: center;
 		}
 
-		h4.phone-number {
+		.phone-number {
+			padding-left: 3%;
+		}
+
+		h4.number {
 			font-size: 1.2em;
 			display: inline-table;
 			padding-left: 5%;
@@ -130,7 +141,15 @@
 			padding-left: 5%;
 		}
 			
-		h4.emailaddress {
+		.fa-envelope-o {
+			text-align: center;
+		}
+
+		.emailaddress {
+			padding-left: 1%;
+		}
+
+		h4.email {
 			padding-left: 3%;
 			display: inline-table;
 			font-size: 1.2em;
@@ -234,9 +253,9 @@
 			<div class="col-md-7 col-sm-12 left">
 
                 <div id="pic">
-                   	<img class="img-responsive headshot" src="http://i.imgur.com/1sXJQIv.jpg"/>
+                   	
                 </div>
-
+				<img class="img-responsive headshot" src="http://i.imgur.com/1sXJQIv.jpg"/>
 			</div>
 
 			<div class="col-md-5 col-sm-12 right">
@@ -247,7 +266,23 @@
 						<h2 id="position">Full Stack Web Developer in SF</h2>
 					</div>
 					<div class="contact">
-						<div class="contact-phone">
+						<table>
+							<tr>
+								<td><i class="fa fa-mobile"></i></td>
+								<td>	<h4 class="phone-number">
+										<a class="number" href="tel:323-333-1225">(323) 333-1225</a>
+									</h4>	
+								</td>
+								<td><i class="fa fa-envelope-o"></i></td>
+								<td><h4 class="emailaddress">
+										<a class="email" href="mailto:israeldmatos@gmail.com">
+								israeldmatos@gmail.com</a>
+									</h4>
+								</td>
+							</tr>
+						</table>
+
+					<!-- 	<div class="contact-phone">
 							<i class="fa fa-mobile"></i>
 							<h4 class="phone-number">
 								<a class="number" href="tel:323-333-1225">(323) 333-1225</a>
@@ -259,7 +294,8 @@
 								<a class="email" href="mailto:israeldmatos@gmail.com">
 								israeldmatos@gmail.com</a>
 							</h4>
-						</div>
+						</div> -->
+
 					</div>
 					<div class="portfolio-btn">
 						<a class="portfolio" href="#" >
